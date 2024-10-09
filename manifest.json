@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Genius Album Controls",
+  "name": "Genius Arrow Pager",
   "version": "0.1.0",
   "description": "Allows you to page through a Genius album's songs using your arrow keys.",
   "homepage_url": "https://codeberg.org/spf/genius-arrow-pager",
@@ -11,5 +11,10 @@
       ],
       "js": ["./index.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "genius-arrow-pager@spf.lol"
+    }
+  }
 }
