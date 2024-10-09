@@ -1,4 +1,7 @@
-const isSongPage = !!document.querySelector("[class^=AlbumTracklist]");
+const isSongPage =
+	!!window.location.href.match(
+		/http(?:s)?:\/\/genius\.com\/[a-z0-9-]*-lyrics/gi,
+	) && !!document.querySelector("[class^=AlbumTracklist]");
 
 const getNextUrl = (songs, prev) => {
 	const currentIndex = songs.indexOf(window.location.pathname);
