@@ -8,7 +8,7 @@ This means you do not have to go to the bottom of the page and click on the next
 
 | Without the extension                                               | With the extension                                            |
 | ------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [![Without the extension video](./assets/thumb.jpg)](./assets/previews/without.mp4)       | [![With the extension video](./assets/thumb.jpg)](./assets/previews/with.mp4)       |
+| [Without the extension video](./assets/previews/without.mp4)        | [With the extension video](./assets/previews/with.mp4)        |
 
 <sup>An example where I page through [The Weeknd](https://genius.com/artists/The-weeknd)'s ["After Hours"](https://genius.com/albums/The-weeknd/After-hours) (great album, btw)</sup>
 
