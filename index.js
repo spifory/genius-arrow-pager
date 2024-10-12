@@ -14,8 +14,11 @@ const getNextUrl = (songs, prev) => {
 	}
 };
 
+const keys = new Set();
+
 document.addEventListener("keydown", (event) => {
 	if (isSongPage) {
+		keys.add(event.key);
 		const songs = [];
 		const tracklist = document.querySelectorAll(
 			"[class^=AlbumTracklist__TrackName]",
@@ -32,10 +35,23 @@ document.addEventListener("keydown", (event) => {
 		switch (event.key) {
 			case "ArrowRight":
 			case "ArrowLeft":
-				getNextUrl(songs, event.key === "ArrowLeft");
+				if (keys.size === 1) {
+					getNextUrl(songs, event.key === "ArrowLeft");
+				}
 				break;
 			default:
 				return;
 		}
+	}
+});
+
+document.addEventListener("keyup", (event) => {
+	switch (event.key) {
+		case "ArrowLeft":
+		case "ArrowRight":
+			keys.delete(event.key);
+			break;
+		default:
+			return;
 	}
 });
