@@ -9,9 +9,17 @@
       "matches": [
         "*://*.genius.com/*"
       ],
-      "js": ["./index.js"]
+      "js": [
+        "./index.js"
+      ]
     }
   ],
+  "icons": {
+    "16": "./assets/icons/logo_16x16.png",
+    "48": "./assets/icons/logo_48x48.png",
+    "128": "./assets/icons/logo_128x128.png",
+    "256": "./assets/icons/logo_256x256.png"
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "genius-arrow-pager@spf.lol"
