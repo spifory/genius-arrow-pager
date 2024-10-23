@@ -46,12 +46,5 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("keyup", (event) => {
-    switch (event.key) {
-        case "ArrowLeft":
-        case "ArrowRight":
-            keys.delete(event.key);
-            break;
-        default:
-            return;
-    }
+    keys.delete(event.key);
 });
